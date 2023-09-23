@@ -1,9 +1,16 @@
-/* Document *//**
- * 1. Correct the line height in all browsers.
- * 2. Prevent adjustments of font size after orientation changes in iOS.
- */
+@media (min-width: 768px) and (max-width: 1279px) {
 
- html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+    .main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .card h2 {
+        font-size: 16px;
+    }
+
+    .card a,
+    p {
+        font-size: 14px;
+    }
 }
