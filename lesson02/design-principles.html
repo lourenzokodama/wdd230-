@@ -1,55 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <!-- Meta tags for character encoding and viewport settings -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Design Principles</title>
-    <link rel="stylesheet" href="style/normalize.css">
+    <!-- Title of the webpage -->
+    <title>Design-Form</title>
+    <!-- Link to normalize.css for resetting default browser styles -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <!-- Link to Google Fonts and custom stylesheets for different screen sizes -->
     <link href="https://fonts.googleapis.com/css2?family=Gugi&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style/large.css">
-    <link rel="stylesheet" href="style/medium.css" media="(max-width: 894px) and (min-width: 650px)">
-    <link rel="stylesheet" href="style/small.css" media="(max-width: 649px)">
+    <link rel="stylesheet" href="styles/large.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(max-width: 894px) and (min-width: 650px)">
+    <link rel="stylesheet" href="styles/small.css" media="(max-width: 649px)">
 </head>
+
 <body>
+
+    <!-- Header Section -->
     <header>
+        <!-- Main heading -->
         <h1>Design Principles</h1>
+        <!-- Subtitle -->
         <span>Lourenzo Kodama</span>
     </header>
+
+    <!-- Main Content Section -->
     <main>
+        <!-- Section 1: Clean Design -->
         <section>
+            <!-- Subheading for the design principle -->
             <h3>Clean Design</h3>
             <div>
+                <!-- Description and link -->
                 <p><span>Google Fonts API</span></p>
                 <p><a target="_blank" href="https://fonts.google.com/">fonts.google</a></p>
+                <!-- Image illustrating the principle -->
                 <img src="image/googlefont.png" width="100" alt="Google fonts api page for an example of white space and a clean design">
-                <p>Google Fonts API effectively uses white-space, creating a clean and calm design, making content clear and easy to understand.</p>
-                <p>This design is achieved by separating fonts into boxes with appropriate spacing, simplifying the presentation.</p>
+                <!-- Explanation of the principle -->
+                <p>
+                    Google Fonts API has a good use of white-space making it have
+                    a clean design. You feel more calm when you look at those fonts and feel like clear to understand too.
+                </p>
+                <p>
+                    Clean design comes mostly from the fact that all the fonts
+                    are separated into boxes and have spacing between them, making it more simple.
+                </p>
             </div>
         </section>
+
+        <!-- Section 2: Rule of Thirds -->
         <section>
             <h3>Rule of Thirds</h3>
             <div>
                 <p><span>Brigham Young University - Idaho</span></p>
                 <p><a target="_blank" href="https://byui.edu/">byui.edu</a></p>
-                <img src="image/byu.png" width="100" alt="Example of 'rule of thirds' from byui's website">
-                <p>Following the "Rule of Thirds," the focal point (woman's face) is on the right, and text (another focal point) is on the left.</p>
-                <p>This alignment enhances focus on the image and readability of the text, improving user experience.</p>
+                <img src="image/byu.png" width="100" alt="example of 'rule of thirds' from byui's website">
+                <p>
+                    The image at the bottom of the screenshot follows the "Rule
+                    of Thirds", with the focal point (the woman's face) on the right and the text (another focal point) on the left.
+                </p>
+                <p>
+                    When images and text are aligned this way, it makes it easier to see the focus of the image and read the text, enhancing user experience.
+                </p>
             </div>
         </section>
+
+        <!-- Section 3: Alignment -->
         <section>
             <h3>Alignment</h3>
             <div>
                 <p><span>GitHub</span></p>
                 <p><a target="_blank" href="https://www.github.com/">github.com</a></p>
-                <img src="image/github.png" width="100" alt="Example of alignment from the GitHub website">
-                <p>Six logos at the bottom are aligned both vertically and horizontally, simplifying understanding. Horizontal centering guides reading direction.</p>
-                <p>Alignment is a fundamental design principle that enhances page aesthetics and user appeal when used effectively.</p>
+                <img src="image/github.png" width="100" alt="example of alignment from the GitHub website">
+                <p>
+                    The six logos at the bottom are aligned (in pairs) vertically and horizontally, making it simple and easy to understand.
+                    All the elements on the page are horizontally centered, guiding the reading direction.
+                </p>
+                <p>
+                    Alignment is a crucial design principle that can enhance overall aesthetics and user appeal when used effectively.
+                </p>
             </div>
         </section>
     </main>
+
+    <!-- Footer Section -->
     <footer>
+        <!-- Copyright information, author's name, location, and dynamic year and time placeholders -->
         &copy;<span id="year"></span> Lourenzo Kodama | Utah-USA | <span id="time"></span>
     </footer>
+
+    <!-- Script for dynamic data -->
     <script src="script/data.js"></script>
 </body>
+
 </html>
