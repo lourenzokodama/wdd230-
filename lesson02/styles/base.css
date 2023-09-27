@@ -1,31 +1,40 @@
+/* Apply 'Abril Fatface' font to all elements */
 * {
     font-family: 'Abril Fatface', cursive;
 }
 
+/* Set the background color of the HTML element to white */
 html {
-    background-color:white;
+    background-color: white;
 }
 
+/* Center the content in the body and limit its maximum width to 900px */
 body {
     max-width: 900px;
     margin: 0 auto;
 }
 
+/* Style the header section */
 header {
     text-align: center;
-    background-color:rgb(95, 65, 65);
+    background-color: rgb(95, 65, 65);
     border-radius: 0 0 10px 10px;
-    color:black;
+    color: black;
     padding: 1em;
 }
+
+/* Style the h1 element within the header */
 h1 {
     margin-bottom: 0.25em;
 }
+
+/* Style the span element within the header */
 header > span {
     font-size: medium;
     color: lightblue;
 }
 
+/* Style the main content section using CSS Grid */
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -33,32 +42,44 @@ main {
     width: 95%;
     margin: 20px auto;
 }
+
+/* Style individual sections within the main content */
 section {
     border-radius: 10px;
-    background-color:rgb(95, 65, 65);
+    background-color: rgb(95, 65, 65);
     border: solid 1px gray;
     overflow: hidden;
 }
+
+/* Apply 'Abril Fatface' font to all elements within sections */
 section * {
-     font-family: 'Abril Fatface', cursive;
+    font-family: 'Abril Fatface', cursive;
 }
+
+/* Style the h3 elements within sections */
 h3 {
     margin: 0;
-     
     padding: 10px;
-    /* text-align: center; */
-    background:rgb(95, 65, 65);
+    background: rgb(95, 65, 65);
     color: black;
 }
+
+/* Style the content div within sections */
 section > div {
     padding: 0 10px;
 }
+
+/* Style spans within the content div */
 section > div > span {
     display: block;
 }
+
+/* Style all elements within the content div */
 section > div > * {
     font-size: 1.05em;
 }
+
+/* Style images within sections */
 section img {
     width: calc(100% - 2px);
     display: block;
@@ -67,15 +88,19 @@ section img {
     max-width: 320px;
 }
 
+/* Style the footer section */
 footer {
     text-align: center;
-    background-color:rgb(95, 65, 65);
+    background-color: rgb(95, 65, 65);
     border-radius: 10px 10px 0 0;
     padding: 1em;
 }
+
+/* Style the #time element within the footer */
 #time {
     padding-top: 5px;
     display: block;
     font-size: small;
     color: lightblue;
 }
+
