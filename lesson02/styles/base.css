@@ -1,4 +1,6 @@
+/* Google Fonts API */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Pacifico&display=swap');
+
 /* Set the background color of the HTML element to white */
 html {
     background-color: white;
@@ -13,10 +15,12 @@ body {
 /* Style the header section */
 header {
     text-align: center;
-    background-color: rgb(95, 65, 65);
+    background-color: #f1f1f1;
+    color: rgb(67, 58, 58);
     border-radius: 0 0 10px 10px;
-    color: black;
+    color: white;
     padding: 1em;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Style the h1 element within the header */
@@ -37,6 +41,8 @@ main {
     grid-gap: 20px;
     width: 95%;
     margin: 20px auto;
+    background-color: rgb(22, 24, 47);
+  color: rgba(255, 255, 255, 0.964);
 }
 
 /* Style individual sections within the main content */
@@ -49,14 +55,15 @@ section {
 
 /* Apply 'Abril Fatface' font to all elements within sections */
 section * {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Style the h3 elements within sections */
 h3 {
     margin: 0;
     padding: 10px;
-    background: rgb(95, 65, 65);
+    background-color: rgb(22, 24, 47);
+    color: rgba(255, 255, 255, 0.964);
     color: black;
 }
 
@@ -87,7 +94,8 @@ section img {
 /* Style the footer section */
 footer {
     text-align: center;
-    background-color: rgb(95, 65, 65);
+    background-color: rgb(22, 24, 47);
+    color: rgba(255, 255, 255, 0.964);
     border-radius: 10px 10px 0 0;
     padding: 1em;
 }
@@ -97,7 +105,7 @@ footer {
     padding-top: 5px;
     display: block;
     font-size: small;
-    color: lightblue;
+    color: orange;
 }
 
 
