@@ -1,9 +1,4 @@
-
-/* Apply 'Abril Fatface' font to all elements */
-* {
-    font-family: 'Abril Fatface', cursive;
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Pacifico&display=swap');
 /* Set the background color of the HTML element to white */
 html {
     background-color: white;
