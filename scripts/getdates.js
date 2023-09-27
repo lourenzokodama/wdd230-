@@ -6,4 +6,4 @@ document.getElementById("time").innerHTML = "Last updated:"+document.lastModifie
 // Get the last modified date and update the "lastModified" element
 const dateElement = document.getElementById("lastModified");
 const lastModifiedDate = document.lastModified;
-dateElement.textContent = "Last Modified: " + lastModifiedDate;
+dateElement.textContent = "LastModified: " + lastModifiedDate;
