@@ -175,7 +175,9 @@ footer {
   margin: auto;
   width: 40rem;
 }
-
+.map{
+  align:center;
+}
 footer p {
   margin: 0;
 }
