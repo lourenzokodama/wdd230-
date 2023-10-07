@@ -131,7 +131,9 @@ h2 {
    text-align: center;
 
 }
-
+.maps{
+  align:center;
+}
   /* CSS for the hamburger icon */
         .menu-icon {
             display: none;
@@ -175,9 +177,7 @@ footer {
   margin: auto;
   width: 40rem;
 }
-.maps{
-  align:center;
-}
+
 footer p {
   margin: 0;
 }
