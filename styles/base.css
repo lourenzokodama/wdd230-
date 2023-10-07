@@ -2,14 +2,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Pacifico&display=swap');
 
 /* styles.css */
-
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  background-color: #f1f1f1; 
+  background-color: #f1f1f1;
   color: rgb(67, 61, 58);
-  border-radius: 50px; 
+  border-radius: 50px;
   padding: 20px;
   margin-bottom: 20px;
 }
@@ -25,7 +24,7 @@ body {
         }
 
 header {
-  background-color: rgb(22, 24, 47); 
+  background-color: rgb(22, 24, 47);
   color: rgba(255, 255, 255, 0.964);
   text-align: center;
   border-radius: 5px;
@@ -93,7 +92,7 @@ h2 {
 }
 
 .navtitle, .information, .place{
-    background:rgba(240, 101, 26, 0.95);
+    background: rgba(240, 101, 26, 0.95);
     width: 40rem;
     margin: auto;
    text-align: center;
@@ -144,8 +143,17 @@ h2 {
         .menu li {
             padding: 10px;
         }
+  
+  #frame {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
-
+    #frame img{
+        grid-column: 2;
+        width: 250px;
+        margin: auto;
+    }
 footer {
   background-color: rgb(240, 101, 26, 0.95);
   color: #fff;
