@@ -2,9 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Pacifico&display=swap');
 
 /* styles.css */
-#frame{
-  text-align: center;
-}
+
 body {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
@@ -19,9 +17,9 @@ body {
 
 
     img.avatar{
-        height:150px;
-        width:150px;
-        border-radius:50%;
+        height: 150px;
+        width: 150px;
+        border-radius: 50%;
         vertical-align: middle;
         padding: 15px;
         }
@@ -31,7 +29,7 @@ header {
   color: rgba(255, 255, 255, 0.964);
   text-align: center;
   border-radius: 5px;
-  margin:auto;
+  margin: auto;
   width: 50rem;
 
 }
@@ -90,12 +88,12 @@ h2 {
 .card {
   border-radius: 5px;
   padding: 20px;
-  margin:auto;
+  margin: auto;
   width: 40rem;
 }
 
 .navtitle, .information, .place{
-    background:rgba(240, 101, 26, 0.95);;
+    background:rgba(240, 101, 26, 0.95);
     width: 40rem;
     margin: auto;
    text-align: center;
@@ -110,8 +108,8 @@ h2 {
 
 }
 
-#frame{
-  text-align:center;
+.frame{
+  text-align: center;
 }
   
         .menu-icon {
