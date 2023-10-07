@@ -107,9 +107,7 @@ h2 {
 
 }
 
-.frame{
-  text-align: center;
-}
+
   
         .menu-icon {
             display: none;
@@ -144,12 +142,12 @@ h2 {
             padding: 10px;
         }
   
-  #frame {
+  #map {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    #frame img{
+    #map img{
         grid-column: 2;
         width: 250px;
         margin: auto;
