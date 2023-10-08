@@ -142,12 +142,12 @@ h2 {
             padding: 10px;
         }
   
-  #map {
+  .map {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    #map img{
+    .map img{
         grid-column: 2;
         width: 250px;
         margin: auto;
