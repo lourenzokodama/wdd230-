@@ -147,8 +147,7 @@ h2 {
     }
 
     .map img{
-        grid-column: 2;
-        width: 250px;
+   
         margin: auto;
     }
 footer {
