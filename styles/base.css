@@ -1,3 +1,5 @@
+@media only screen and (max-width: 768px) {
+}
 import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Pacifico&display=swap');
 
 /* styles.css */
@@ -19,7 +21,7 @@ body {
         height:150px;
         width:150px;
         border-radius:50%;
-        vertical-align: middle;
+        vertical-align: center;
         padding: 15px;
         }
 
