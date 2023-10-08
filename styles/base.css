@@ -140,7 +140,12 @@ h2 {
         .menu li {
             padding: 10px;
         }
-
+.map{
+  text-align:center;
+}
+.map img{
+   margin: auto;
+}
     
 footer {
   background-color: rgb(240, 101, 26, 0.95);
