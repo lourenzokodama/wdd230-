@@ -5,13 +5,11 @@ import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&fam
 /* styles.css */
 html{
   justify-items: center;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+ 
   align-items: center;
 }
   .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+   
    width: 30rem;
     margin: 10px auto; 
     grid-template-columns: repeat(auto-fit, minmax(5em, 2fr));
