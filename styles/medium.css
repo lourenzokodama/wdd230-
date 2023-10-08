@@ -1,1 +1,4 @@
-
+@media screen and (min-width: 700px) {
+    #hamburger {
+        margin-right: 100px;
+    }
