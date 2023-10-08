@@ -5,13 +5,4 @@ body{
   height: 20px;
   width: 30%;
 }
-img{
-  border-radius: 5px;
-  box-shadow: 5px 1px 5px black;
-  width: 7em;
-}
-.title{
-  font-size: 3rem;
-  text-shadow: 5px 7px 10px #000000;
-}
 }
