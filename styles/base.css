@@ -122,6 +122,13 @@ footer a:hover {
     top: calc(100%);
 }
 
+ .map {
+    text-align: center;
+}
+
+.map img {
+    margin: 0 auto;
+}
 
 ::-webkit-scrollbar {
     width: 7px;
