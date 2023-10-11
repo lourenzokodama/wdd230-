@@ -6,16 +6,22 @@
   <meta name="author" content="Lourenzo de M kodama">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="styles/base.css" >
-  <link rel="stylesheet" type="text/css" href="styles/medium.css" media="(max-width: 654px)" >
-  <link rel="stylesheet" type="text/css" href="styles/normalize.css" media="(max-width: 509px)" >
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/medium.css" media="(max-width: 654px)">
+  <link rel="stylesheet" href="styles/small.css" media="(max-width: 509px)">
+  <link rel="stylesheet" href="styles/tiny.css" media="(max-width: 310px)">
   <link rel="shortcut icon" href="images/kodama.ico">
   <title>Lourenzo Kodama</title>
 </head>
 <body>
   <header>
-    <!-- Navigation bar -->
+    <!-- header name and image -->
     <div class="container">
-    <h1>Lourenzo de M Kodama</h1><img class="avatar" src="images/lourenzo.jpg" alt="Photo Lourenzo Kodama"></div><a href="#" id="hamburger">☰</a>
+    <h1> Lourenzo <span class="brk1"></span> de M Kodama </h1>
+    <img class="avatar" src="images/lourenzo.jpg" alt="Photo Lourenzo Kodama"></div>
+    
+    <!-- Navigation bar -->
+    <a href="#" id="hamburger">☰</a>
     <nav>
       <ul>
         <li>
@@ -38,10 +44,11 @@
   </header>
   <main>
     <!-- Main content of the home page -->
-    <section class="card">
-      <h2>WDD 230 - Lourenzo Kodama Web Frontend Development.</h2>
+     <h2>WDD 230<span class="card">:</span><span class="brk2"></span> Assignment Portal</h2>
+            <ul onscroll="scrollDown(this)">
       <hr>
-    </section><!--        <aside>-->
+    <!-- selection- navbar-->
+              
     <section class="navtitle">
       <h3>Learning Activities</h3>
     </section>
@@ -78,7 +85,9 @@
           <a href="">10</a>
         </li><!-- Add more assignment links as needed -->
       </ol>
+      
     </div><!-- Add more sections and content as needed -->
+              
     <section class="information">
       <h3>information</h3>
     </section>
@@ -90,10 +99,12 @@
   <div class="map">
   <iframe title="myframe"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153704.799707491!2d-114.18673586081155!3d39.47407618005252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874c6bc78f13f9cd%3A0xbddf4aa56cd7463f!2sUtah!5e0!3m2!1sen!2sus!4v1696406595500!5m2!1sen!2sus" style="border:0; border: 0" width="600" height="450" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">mapsframe</iframe>
   </div>
-    <footer>
-    <!-- Footer content -->
-    <p>©<span id="year"></span> lourenzokodama| Utah- USA | <span id="time"></span></p>
-  </footer><!-- JavaScript script for year -->
+      <footer>
+            &copy;<span id="year"></span> | Lourenzo Kodama <span class="brk1"></span><span class="unBrk1">|</span> Idaho online| <a href="https://www.byui.edu/online" target="_blank">BYUI Online </a><br>
+            <span id="time"></span>
+        </footer>
+      
+      <!-- JavaScript script for year -->
   <script src="scripts/getdates.js"></script>
 </body>
 </html>
