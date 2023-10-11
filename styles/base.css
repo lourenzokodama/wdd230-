@@ -36,6 +36,15 @@ header {
     border-radius: 5px;
     z-index: 15;
 }
+img.avatar {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+}
+
 h1 {
     font-size: 40px;
     color: white;
