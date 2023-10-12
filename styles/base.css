@@ -1,151 +1,195 @@
+
 /* Add the @import rule at the top of the stylesheet */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Pacifico&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
 
-/* Apply styles for screens with a maximum width of 768px */
-@media only screen and (max-width: 768px) {
-    /* Add your responsive styles here if needed */
+body {
+    background-color: rgba(240, 101, 26, 0.95);
+   
+    
+}
+/*HEADER*/
+
+header {
+    background-color:rgb(22, 24, 47);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    justify-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+}
+
+header img {border-radius: 10px;}
+
+header button {
+    background-color: #333333;
+    color: #FFF8EB;
+    padding: 0.5rem;
+    border-radius: 25%;
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 255, .2);
+    width: 3rem;
+    height: 3rem;
+}
+
+header button:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+#darkMode {
+    width: 2.8rem;
+    height: 3rem;
+    cursor: pointer;
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 255, .2);
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 255, .2);
+}
+#darkMode:hover{
+    box-shadow: none;
+    border: none;
+}
+
+#menu::before {
+	content: "☰";
+}
+
+nav {display: none}
+
+nav ol{
+    flex-direction: column;
+    text-align: center;    
+    background-color: #333333;
 }
 
 
-html {
-    background-color: lightblue;
+nav li { 
+    list-style: none;
+    padding: 0.2rem;
+    
+}
+
+nav  li a {    
+    text-decoration: none;
+    color: #fff;
+    padding: 0.2rem;
+}
+
+nav li:hover {
+    background-color: rgb(22, 24, 47);
+    color: #FFF8EB;
+    text-decoration: underline;
+}
+
+
+/* when the button is clicked - the open class is toggle (added/removed) and accounted for here */
+
+
+.open {display: block;}
+
+
+#menu.open {
+    width: 3rem;
+    
+}
+#menu.open::before {
+	content: "✖";
+    font-size: 1.5rem;
+}
+/*MAIN*/
+main {
+    max-width: 80%;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    justify-items: center;
-    align-items: center;
-    height: 100%;
+    margin: 0 auto;
+    gap: 1rem;
 }
-body {
-    border-radius: 5px;
-    min-height: 406px;
-    height: 70%;
-    width: 70%;
-    max-width: 700px;
-    background-color: white;
+main h2 {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    text-decoration: underline;
 }
-header {
-    padding: 1em;
-    display: grid;
-    position: relative;
-    background-color: seagreen;
-    grid-template-columns: auto 20%;
-    grid-template-rows: 5em;
-    justify-items: center;
-    border-radius: 5px;
-    z-index: 15;
+
+li {
+    padding-left: 1rem;
+    padding-top: 1rem;
 }
-img.avatar {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    padding: 15px;
+
+.card {
+    border: 1px solid black;
+    padding-bottom: 0.3rem
+}
+
+
+.card h3{
+    background-color: rgb(22, 24, 47);
+    text-align: center;
+    padding: 0.1rem;
+}
+
+main .card ul li{list-style-type: none;}
+
+main .card ul li a {
+    padding: 10px;
+}
+h2 .location{
+    text-align: center;
+}
+/*FOOTER*/
+footer {
+    background-color: rgb(22, 24, 47);
+    color: #fff;
+    width: 100%;
+    padding: 1rem;
+   
+    text-align: center;
+}
+
+#year,#lastModified {
+    background-color: rgb(22, 24, 47);
+}
+
+
+/*Dark Mode Settings*/
+
+.background-Black {
+    background-color: black;
+}
+
+.white-letter {
+    color: #fff;
+}
+.white-border {
+    border:  2px dashed #fff;
+}
+
+
+/*Week 03*/
+
+picture img{
+    width: 100%;
+    object-fit: cover;
+  }
+
+
+iframe{ 
     display: block;
     margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid black;
 }
+ 
 
-h1 {
-    font-size: 40px;
-    color: white;
-    align-self: center;
-}
-header > img {
-    width: 100%;
-    box-shadow: 1px 1px 10px black;
-    border-radius: 5px;
-}
-main {
-    width: 97%;
-    height: calc(100% - 5em - 6em - 4em + 5px);
-    margin: 2em 0 2em auto;
+#hero {
     position: relative;
 }
-h2 {
-    border-bottom: solid 1px #cccccc;
-    margin-bottom: 0;
-    width: 95%;
-}
-ul {
-    margin: 0;
-    padding-top: 10px;
-    width: calc(100% - 40px);
-    height: 94%;
-    overflow-y: auto;
-}
-ul li {
-    padding-bottom: 5px;
-}
-a {
-    color: rgb(16, 6, 163);
-}
-a:active {
-    color: rgb(216, 127, 10);
-}
-footer {
-    background-color: rgb(2, 16, 219);
-    position: relative;
-    color: white;
-    padding: 0.75em;
-    border-radius: 5px;
-    text-align: center;
-    z-index: 10;
-}
-footer a {
-    color: white;
-    text-decoration: underline lightblue;
-    transition: color 0.5s, text-shadow 0.5s;
-}
-footer a:hover {
-    color: rgb(30, 15, 233);
-    text-shadow: 1px 1px 10px lightblue;
-}
-#updated {
-    color: lightblue;
-    font-size: 12px;
-}
-#not-reasonable-size {
-    display: none;
-}
-.brk1 {
-    display: none;
-}
-.unBrk1 {
-    display: inline;
-}
 
-
-#scroll-down {
-    position: absolute;
-    transition: all 0.4s;
-    top: calc(100% + 40px);
-    background-color: rgba(0,0,0,0.8);
-    transform: translate(-50%,0);
-    padding: 0.25rem 0.5rem;
-    border-radius: 5px;
-    font-size: 0.7rem;
-    color: white;
-    left: 50%;
-}
-#scroll-down.up {
-    top: calc(100%);
-}
-
- .map {
-    text-align: center;
-}
-
-.map img {
-    margin: 0 auto;
-}
-
-::-webkit-scrollbar {
-    width: 7px;
-}
-::-webkit-scrollbar-track {
-    background: transparent;
-}
-::-webkit-scrollbar-thumb {
-    background-color: rgb(226, 75, 15);
-    border-radius: 5px;
-}
