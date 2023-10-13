@@ -1,0 +1,36 @@
+@media screen and (min-width: 700px){
+    body {
+        font-size: 1.5rem;
+    }
+
+
+    nav {
+      display: block;
+    }
+
+    nav ol {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+
+  header #menu {
+    display: none;
+  }
+
+  main {
+    grid-template-columns: 0.8fr auto;
+  }
+
+  .learning {
+    grid-row: 2/3;
+    
+  }
+  .information {
+    grid-row: 2/3;
+  }
+
+  main h2 {
+    text-align: left;
+    font-size: 1.5rem;
+  }
