@@ -1,4 +1,3 @@
-
 /* Add the @import rule at the top of the stylesheet */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Pacifico&display=swap');
 
@@ -9,14 +8,15 @@
 }
 
 body {
-    background-color: rgba(240, 101, 26, 0.95);
+    background-color: #8B836E;
    
     
 }
 /*HEADER*/
 
 header {
-    background-color:rgb(22, 24, 47);
+    background-color:#99E0CB;
+    color: hwb(0 0% 100%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,6 +27,8 @@ header {
     letter-spacing: 0.2rem;
 }
 
+header img {border-radius: 10px;}
+
 .avatar {
     height: 150px;
     width: 150px;
@@ -35,10 +37,9 @@ header {
     display: block;
     margin: 0 auto;
 }
-
 header button {
-    background-color: #333333;
-    color: #FFF8EB;
+    background-color: #99E0CB;
+    color: hsl(0, 0%, 100%);
     padding: 0.5rem;
     border-radius: 25%;
     box-shadow: 2px 2px 1px 1px rgba(0, 0, 255, .2);
@@ -51,18 +52,7 @@ header button:hover {
     cursor: pointer;
 }
 
-#darkMode {
-    width: 2.8rem;
-    height: 3rem;
-    cursor: pointer;
-    padding: 2px;
-    border: 1px solid rgba(0, 0, 255, .2);
-    box-shadow: 2px 2px 1px 1px rgba(0, 0, 255, .2);
-}
-#darkMode:hover{
-    box-shadow: none;
-    border: none;
-}
+
 
 #menu::before {
 	content: "☰";
@@ -90,8 +80,8 @@ nav  li a {
 }
 
 nav li:hover {
-    background-color: rgb(22, 24, 47);
-    color: #FFF8EB;
+    background-color: #99E0CB;
+    color: hwb(0 97% 3%);
     text-decoration: underline;
 }
 
@@ -137,7 +127,7 @@ li {
 
 
 .card h3{
-    background-color: rgb(22, 24, 47);
+    background-color: #99E0CB;
     text-align: center;
     padding: 0.1rem;
 }
@@ -152,8 +142,8 @@ h2 .location{
 }
 /*FOOTER*/
 footer {
-    background-color: rgb(22, 24, 47);
-    color: #fff;
+    background-color: #99E0CB;
+    color: hsl(0, 0%, 0%);
     width: 100%;
     padding: 1rem;
    
@@ -163,28 +153,6 @@ footer {
 #year,#lastModified {
     background-color: rgb(22, 24, 47);
 }
-
-
-/*Dark Mode Settings*/
-
-.background-Black {
-    background-color: black;
-}
-
-.white-letter {
-    color: #fff;
-}
-.white-border {
-    border:  2px dashed #fff;
-}
-
-
-/*Week 03*/
-
-picture img{
-    width: 100%;
-    object-fit: cover;
-  }
 
 
 iframe{ 
