@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Exo+2:wght@800&display=swap');
+
 *,
 *::after,
 *::before {
@@ -14,14 +15,14 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Acme, Arial, sans-serif;
 }
 
 h1 {
   font-size: 1.5rem;
 }
 
-main {
+base {
   margin: 0.5rem auto;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0.5rem;
