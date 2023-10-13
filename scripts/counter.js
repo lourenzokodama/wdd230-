@@ -5,7 +5,7 @@ button.addEventListener("click", () => {
   nav.classList.toggle("open");
   button.classList.toggle("open");
 
-const visitsDisplay = document.querySelector("#counter");
+const visitsDisplay = document.querySelector("#people");
 
 let numVisits = Number(window.localStorage.getItem("numVisits-ls")) || 0;
 
