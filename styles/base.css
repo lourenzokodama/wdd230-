@@ -27,7 +27,14 @@ header {
     letter-spacing: 0.2rem;
 }
 
-header img {border-radius: 10px;}
+.avatar {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    padding: 15px;
+    display: block;
+    margin: 0 auto;
+}
 
 header button {
     background-color: #333333;
