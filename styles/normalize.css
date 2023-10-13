@@ -1,4 +1,4 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/lourenzokodama/normalize.css */
+/*! normalize.css v8.0.1 | MIT License | github.com/lourenzokodama-230/normalize.css */
 
 /* Document
    ========================================================================== */
@@ -344,9 +344,6 @@
    * Add the correct display in IE 10.
    */
   
-  [hidden] {
-    display: none;
-  }
   [hidden] {
     display: none;
   }
