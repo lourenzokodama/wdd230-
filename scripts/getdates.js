@@ -8,4 +8,4 @@ const dateElement = document.getElementById("lastModified");
 const lastModifiedDate = document.lastModified;
 dateElement.textContent = "LastModified: " + lastModifiedDate;
 
-});
+
