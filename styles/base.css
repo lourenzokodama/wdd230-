@@ -120,7 +120,7 @@ li {
     padding-top: 1rem;
 }
 
-.card {
+.card01, .card02 {
     border: 1px solid black;
     padding-bottom: 0.3rem
 }
