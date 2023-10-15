@@ -17,6 +17,19 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
+    /*Dark Mode Settings*/
+
+.background-Black {
+    background-color: black;
+}
+
+.white-letter {
+    color: #fff;
+}
+.white-border {
+    border:  2px dashed #fff;
+}
+
 #darkMode {
     width: 2.8rem;
     height: 3rem;
