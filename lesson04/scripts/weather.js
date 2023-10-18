@@ -41,6 +41,3 @@ const windchill = (temp, wind) => {
 }
 
 getWeather();
-}
-
-getWeather();
