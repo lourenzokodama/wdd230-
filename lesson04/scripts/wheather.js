@@ -7,7 +7,7 @@ const getWeather = async () => {
     let temp = kelvinToFahrenheit(jsObject.main.temp);
     document.querySelector('#temp').textContent = temp;
 
-    const iconsrc= `https://openweathermap.org/img/w/${jsObject.wheather[0].icon}.png`;
+    const iconsrc= `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
     const desc = jsObject.weather[0].description.toUpperCase();
     document.querySelector('#wheathericon').setAttribute('src', iconsrc);
     document.querySelector('#wheathericon').setAttribute('alt', desc);
