@@ -4,7 +4,12 @@
    --accent-color: #90ee90;
    --default-light: #ffffff;
    --default-dark: #2f2f2f;
-   
+       * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+
+   }
 }
 @media screen and (min-width: 1200px) {
 
