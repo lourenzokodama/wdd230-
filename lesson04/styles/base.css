@@ -17,18 +17,7 @@
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
-    /*Dark Mode Settings*/
-
-.background-Black {
-    background-color: black;
-}
-
-.white-letter {
-    color: #fff;
-}
-.white-border {
-    border:  2px dashed #fff;
-}
+   
 
 #darkMode {
     width: 2.8rem;
@@ -42,6 +31,7 @@
     box-shadow: none;
     border: none;
 }
+    
     nav {
         margin:auto;
         grid-column: 2;
@@ -189,6 +179,19 @@
     }
 
     /* FOOTER */
+     /*Dark Mode Settings*/
+
+.background-Black {
+    background-color: black;
+}
+
+.white-letter {
+    color: #fff;
+}
+.white-border {
+    border:  2px dashed #fff;
+}
+    
     #about {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
