@@ -115,12 +115,12 @@
         height: 661px;
     }
 
-    #wheather {
+    #weather {
         grid-column: 1;
         grid-row: 2;
     }
 
-    #wheather_top {
+    #weather_top {
         margin-bottom: 0;
         margin-top: 0;
     }
