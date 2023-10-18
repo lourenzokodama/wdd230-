@@ -183,18 +183,7 @@
     }
 
     /* FOOTER */
-     /*Dark Mode Settings*/
-
-.background-Black {
-    background-color: black;
-}
-
-.white-letter {
-    color: #fff;
-}
-.white-border {
-    border:  2px dashed #fff;
-}
+   
     
     #about {
         display: grid;
@@ -251,7 +240,18 @@
         flex-wrap: wrap;
         gap: 20px;
     }
+  /*Dark Mode Settings*/
 
+.background-Black {
+    background-color: black;
+}
+
+.white-letter {
+    color: #fff;
+}
+.white-border {
+    border:  2px dashed #fff;
+}
     
 }
 
