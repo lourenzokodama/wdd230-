@@ -60,4 +60,17 @@ const io = new IntersectionObserver((entries, io) => {
 images.forEach(image => {
     io.observe(image);
 });
+// change color
 
+document.getElementById('button').addEventListener('click', function() {
+    const heading = document.getElementById('heading');
+    const currentColor = heading.style.color;
+
+    // If the current color is not set or is set to 'black', change it to 'red'
+    if (!currentColor || currentColor === 'black') {
+        heading.style.color = 'red';
+    } else {
+        // If the current color is 'red', change it back to 'black'
+        heading.style.color = 'black';
+    }
+});
