@@ -57,11 +57,10 @@ header img {
     filter: invert(1);
 }
 
-
-#logo img {
+.logo img {
     width: 30px;
     height: 3rem;
-    padding: 20px;
+    margin: 20px;
 }
 
 
