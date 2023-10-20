@@ -59,18 +59,11 @@ const io = new IntersectionObserver((entries, io) => {
 
 images.forEach(image => {
     io.observe(image);
-});
-// change color
+    // change color
 
-document.getElementById('button').addEventListener('click', function() {
-    const heading = document.getElementById('heading');
-    const currentColor = heading.style.color;
-
-    // If the current color is not set or is set to 'black', change it to 'red'
-    if (!currentColor || currentColor === 'black') {
-        heading.style.color = 'red';
-    } else {
-        // If the current color is 'red', change it back to 'black'
-        heading.style.color = 'black';
-    }
+document.getElementById('colorBtn').addEventListener('click', function() {
+    var randomColor = Math.floor(Math.random() * 256).toString(16);
+    document.body.style.backgroundColor = "#" + randomColor;
 });
+
+
