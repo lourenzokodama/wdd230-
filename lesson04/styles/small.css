@@ -486,3 +486,6 @@ tr td {
     align-items: center;
     margin: auto;
 }
+#darkMode{
+     width: 50px;
+}
