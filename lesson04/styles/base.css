@@ -19,25 +19,7 @@
     }
    
 
-#darkMode {
-    width: 2.8rem;
-    height: 3rem;
-    cursor: pointer;
-    padding: 2px;
-    border: 1px solid rgba(0, 0, 255, .2);
-    box-shadow: 2px 2px 1px 1px rgba(0, 0, 255, .2);
-}
-#darkMode:hover{
-    box-shadow: none;
-    border: none;
-}
-    
-    nav {
-        margin:auto;
-        grid-column: 2;
-        grid-row: 1;
-    }
-    
+
     nav ul {
         display: flex;
         flex-direction: row;
@@ -236,18 +218,4 @@
         flex-wrap: wrap;
         gap: 20px;
     }
-  /*Dark Mode Settings*/
-
-.background-Black {
-    background-color: black;
-}
-
-.white-letter {
-    color: #fff;
-}
-.white-border {
-    border:  2px dashed #fff;
-}
-    
-}
 
