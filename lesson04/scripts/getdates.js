@@ -59,11 +59,6 @@ const io = new IntersectionObserver((entries, io) => {
 
 images.forEach(image => {
     io.observe(image);
-    // change color
-
-document.getElementById('colorBtn').addEventListener('click', function() {
-    var randomColor = Math.floor(Math.random() * 256).toString(16);
-    document.body.style.backgroundColor = "#" + randomColor;
 });
 
 
