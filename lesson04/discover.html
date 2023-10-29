@@ -49,55 +49,84 @@
         </section>
         
     </header>
-  <main class="gallery">
-            <h2>Gallery</h2>
+
+    <section class="date"></section>
+
+    <main class="home">
+        <h1>KJL-Production</h1>
+        <section id="hero">
             <picture>
-                <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
-                     data-src="./images/clear-sky.jpg" alt="Placeholder">
-                <figcaption>What a nice day!</figcaption>
+                <source media="(min-width: 1500px)" srcset="images/places/mou_large.webp">
+                <source media="(min-width: 1200px)" srcset="images/places/mou_medium.webp">
+                <source media="(min-width: 840px)" srcset="images/places/mou_medium.webp">
+                <source media="(min-width: 700px)" srcset="images/places/mou_medium.webp">
+                <img src="./images/places/mou.webp" alt="Production-Kjl">
             </picture>
-            <picture>
-                <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
-                     data-src="./images/a-little-wet.jpg" alt="Placeholder">
-                <figcaption>Just a <em>little</em> wet.</figcaption>
-            </picture>
-            <picture>
-                <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
-                     data-src="./images/beautiful-evening-sky.jpg" alt="Placeholder">
-                <figcaption>Weather can be just <em>so</em> pretty</figcaption>
-            </picture>
-            <picture>
-                <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
-                     data-src="./images/clear-night-sky.jpg" alt="Placeholder">
-                <figcaption>Clear night sky, beautiful moon</figcaption>
-            </picture>
-            <picture>
-                <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
-                     data-src="./images/dangerous-but-beautiful.jpg" alt="Placeholder">
-                <figcaption>Dangerous and beautiful</figcaption>
-            </picture>
-            <picture>
-                <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
-                     data-src="./images/just-a-little-cold.jpg" alt="Placeholder">
-                <figcaption>It's only a <em>little</em> cold out...</figcaption>
-            </picture>
-            <picture>
-                <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
-                     data-src="./images/like-a-strike-of-lightning.jpg" alt="Placeholder">
-                <figcaption>Sometimes weather changes like a strike of lightning</figcaption>
-            </picture>
-            <picture>
-                <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
-                     data-src="./images/winter-tire-may-be-needed.jpg" alt="Placeholder">
-                <figcaption>When outside looks like this make sure you have winter tires</figcaption>
-            </picture>
-            <picture>
-                <img src="https://dummyimage.com/300x200/ddd/000&text=Placeholder"
-                     data-src="./images/you-never-know-what-might-happen.jpg" alt="Placeholder">
-                <figcaption>With weather, you never know what might happen!</figcaption>
-            </picture>
-            <a href="./references.html">Photo references</a>
-        </main>
+            <!-- <button type="button">Discover Us</button> -->
+        </section>
+        <section id="event">
+            <h2>Salt Lake City Events</h2>
+            <hr>
+            <p>Nov 19, 2023: KLJ-Company will upload there website.</p>
+            <p>Dez 4, 2023: Open to business.</p>
+            <p>Jan 8, 2023:  Meeting online.</p>
+        </section>
+        <section id="weather">
+            <h2>Wheather</h2>
+            <div id="weather_top">
+                
+                <h2><span id="temp"></span>&#8457;</h2>
+                <figure><img src="#" alt="Placeholder" id="weathericon" />
+                    <figcaption>OverCastCloud</figcaption>
+                </figure>
+            </div>
+            <hr>
+        <p>Wind: <span id="wind">3.58</span> MPH</p>
+            <p> Wind Chill: <span id="windchill">N/A</span><span id="windDegree"></span></p>
+        </section>
+        <section id="news">
+            <h2>Salt Lake City News</h2>
+            <hr>
+            <h3>News: HI THERE, I'M Lourenzo</h3>
+            <p>I live in Salt Lake City, Utah. The mountains have always felt like home to me. This magical state offers many gorgeous locations and venues for all couples. 
+                I believe that love is the greatest force and I do not take capturing these moments lightly. When you invest in my films -
+                 you invest in the vows that were spoken, the shared smiles + laughter, and the unforgettable words that were said by your closest loved ones. While I do primarily serve those who 
+                 choose to get married in the State of Utah - 
+                I do take on a selective amount of destination and travel work. Take me where your love takes you. Now, let's make magic.  <br><a href="#">Read More...</a>
+            </p>
+            <hr>
+            <h3>Hire the best Videographers</h3>
+            <p>heck out Videographers with the skills you need for your next job. <br> <a href="#">Read more...</a>
+            </p>
+            <hr>
+            <h3>NEWS TITLE HERE</h3>
+            <p>NEWS ARTICLE HERE</p>
+        </section>
+        <section id="join">
+            <h2>Join Us</h2>
+            <p>Do you own a business? Are you a concerned things ? </p>
+            <p>Join us to make a difference in Salt Lake City economy!</p>
+         <form action="#">
+    <button type="submit">Join us</button>
+  </form>
+        </section>
+        <section id="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spot1">
+                <a href="#"><h3>Photograph</h3></a>
+                <img src="images/places/sky.webp" alt="sky">
+            </div>
+            <div id="spot2">
+                <a href="#"><h3>my dear <br> mother earth</h3></a>
+                <img src="images/places/earth.webp" alt=" Shop ">
+            </div>
+            <div id="spot3">
+                <a href="#"><h3>Videos</h3></a>
+                <img src="images/places/cat.webp" alt="videos">
+            </div>
+        </section>
+    </main>
+
     <footer>
         <section id="about">
 
