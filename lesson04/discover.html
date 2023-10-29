@@ -1,18 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="kod-production" content="kodama-production.This is company record dreams make happend .">
+    <meta name="kodama-production" content="kodama-production.This is company record dreams make happend .">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/medium.css">
     <link rel="stylesheet" href="styles/base.css">
+    <link rel="shortcut icon" href="images/logo/kodama.ico">
     <script defer src="scripts/getdates.js"></script>
     <script defer src="scripts/visits.js"></script>
+    <script defer src="scripts/weather.js"></script>
     <title>KodamaProduction</title>
-    
 </head>
 <body>
+    
     <div class="banner">
         <div class="banner-content">
             <div class="banner-text"><p>Come join us for the KJL Company and greet Wednesday at 7:00 p.m.</p></div>
@@ -21,16 +26,18 @@
     </div>
     <header>
         <div id="logo">
-            <a href="index.html"><img src="images/logo/lo.webp" alt="Logo Ljk"></a>
-            <div class="headings">
+            <a href="index.html"><img src="images/logo/lo.webp" alt="kodama-production"></a>
+            <button id="btn">Change Color</button>
+            <div class="hedings">
             <h1 class="headings1">We've got the perfect video for you.</h1>
+                
             </div>
           </div>
         <a href="#" id="hamburger">&#9776;</a>
         <nav>
             <ul>
                 <li><a href="discover.html">Discover</a></li>
-                <li><a href="diretory.html">Directory</a></li>
+                <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -45,85 +52,89 @@
 
     <section class="date"></section>
 
-    <section class="date"></section>
-
-    <main>
-        <h1>Discover Salt lake city</h1>
-        <div class="discover">
-            <div id="disc1">
-                <picture>
-                    <img src="images/places/museum.webp"
-                        data-src="images/places/museum.webp" alt="Museum">
-                </picture>
-                <h2>The Space Needle</h2>
-                <p>Come visit the Space Museum
+    <main class="home">
+        <h1>KJL-Production</h1>
+        <section id="hero">
+            <picture>
+                <source media="(min-width: 1500px)" srcset="images/places/mou_large.webp">
+                <source media="(min-width: 1200px)" srcset="images/places/mou_medium.webp">
+                <source media="(min-width: 840px)" srcset="images/places/mou_medium.webp">
+                <source media="(min-width: 700px)" srcset="images/places/mou_medium.webp">
+                <img src="./images/places/mou.webp" alt="Production-Kjl">
+            </picture>
+            <!-- <button type="button">Discover Us</button> -->
+        </section>
+        <section id="event">
+            <h2>Salt Lake City Events</h2>
+            <hr>
+            <p>Nov 19, 2023: KLJ-Company will upload there website.</p>
+            <p>Dez 4, 2023: Open to business.</p>
+            <p>Jan 8, 2023:  Meeting online.</p>
+        </section>
+        <section id="weather">
+            <h2>Wheather</h2>
+            <div id="weather_top">
+                
+                <h2><span id="temp"></span>&#8457;</h2>
+                <figure><img src="#" alt="Placeholder" id="weathericon" />
+                    <figcaption>OverCastCloud</figcaption>
+                </figure>
             </div>
-            <div id="disc2">
-                <picture>
-                    <img src="images/places/places/a.webp"
-                        data-src="images/places/places/a.webp"Ibanitik-Lake">
-                </picture>
-                <h2>Beutifully Rivers</h2>
-                <p>Come visit our River.</p>
+            <hr>
+        <p>Wind: <span id="wind">3.58</span> MPH</p>
+            <p> Wind Chill: <span id="windchill">N/A</span><span id="windDegree"></span></p>
+        </section>
+        <section id="news">
+            <h2>Salt Lake City News</h2>
+            <hr>
+            <h3>News: HI THERE, I'M Lourenzo</h3>
+            <p>I live in Salt Lake City, Utah. The mountains have always felt like home to me. This magical state offers many gorgeous locations and venues for all couples. 
+                I believe that love is the greatest force and I do not take capturing these moments lightly. When you invest in my films -
+                 you invest in the vows that were spoken, the shared smiles + laughter, and the unforgettable words that were said by your closest loved ones. While I do primarily serve those who 
+                 choose to get married in the State of Utah - 
+                I do take on a selective amount of destination and travel work. Take me where your love takes you. Now, let's make magic.  <br><a href="#">Read More...</a>
+            </p>
+            <hr>
+            <h3>Hire the best Videographers</h3>
+            <p>heck out Videographers with the skills you need for your next job. <br> <a href="#">Read more...</a>
+            </p>
+            <hr>
+            <h3>NEWS TITLE HERE</h3>
+            <p>NEWS ARTICLE HERE</p>
+        </section>
+        <section id="join">
+            <h2>Join Us</h2>
+            <p>Do you own a business? Are you a concerned things ? </p>
+            <p>Join us to make a difference in Salt Lake City economy!</p>
+         <form action="#">
+    <button type="submit">Join us</button>
+  </form>
+        </section>
+        <section id="spotlights">
+            <h2>Business Spotlights</h2>
+            <div id="spot1">
+                <a href="#"><h3>Photograph</h3></a>
+                <img src="images/places/sky.webp" alt="sky">
             </div>
-         
-            <div id="disc4">
-                <picture>
-                    <img src="images/places/famer.webp"
-                        data-src="images/places/famer.webp"alt="market-st">
-                </picture>
-                <h2>Pike Place Market</h2>
-                <p>Come visit  Place Market.</p>
+            <div id="spot2">
+                <a href="#"><h3>my dear <br> mother earth</h3></a>
+                <img src="images/places/earth.webp" alt=" Shop ">
             </div>
-            <div id="disc5">
-                <picture>
-                    <img src="images/places/Amazon-Warehouse.webp"
-                        data-src="images/places/Amazon-Warehouse.webp"alt="amazon">
-                </picture>
-                <h2>Amazon Headquarters</h2>
-                <p> home to many large tech companies.</p>
+            <div id="spot3">
+                <a href="#"><h3>Videos</h3></a>
+                <img src="images/places/cat.webp" alt="videos">
             </div>
-            <div id="disc6">
-                <picture>
-                    <img src="images/places/capital.webp"
-                        data-src="images/places/capital.webp" alt="Capital">
-                </picture>
-                <h2>Bainbridge Ferry</h2>
-                <p>Come visit capital through our system.</p>
-            </div>
-            <div id="disc7">
-                <picture>
-                    <img src="images/discover/megaplex.webp"
-                        data-src="images/discover/megaplex.webp" alt=" Theater">
-                </picture>
-                <h2>The Theater</h2>
-                <p>Come visit our theater.</p>
-            </div>
-            <div id="disc8">
-                <picture>
-                    <img src="images/places/rc.webp"
-                        data-src="images/places/rc.webp" alt="rc">
-                </picture>
-                <h2>Shopping & Eating</h2>
-                <p>Home to world renowned shopping  experiences.</p>
-            </div>
-            <div id="disc9">
-                <picture>
-                    <img src="images/places/EDVOTIvUYAgo-4a.webp" 
-                        data-src="images/places/EDVOTIvUYAgo-4a.webp" alt="Utahjazz">
-                </picture>
-                <h2>Fresh Groceries</h2>
-                <p>Salt Lake City has the best places.</p>
-            </div>
-        </div>
+        </section>
     </main>
 
     <footer>
         <section id="about">
-            <iframe
+
+         <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153704.799707491!2d-114.18673586081155!3d39.47407618005252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874c6bc78f13f9cd%3A0xbddf4aa56cd7463f!2sUtah!5e0!3m2!1sen!2sus!4v1696406595500!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
                 width="600" height="450" style="border: 0" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
+
         
             <div id="address">
                 <h3>Visit Us</h3>
@@ -133,12 +144,12 @@
             </div>
             <div id="contact">
                 <h3>Contact Us</h3>
-                <p>info@Kodama-Company.com</p>
+                <p>info@kodama-Company.com</p>
                 <p>(123) 778-7970</p>
             </div>
         </section>
         <section id="copyright">
-            <p>&copy; <span id="copyrightYear"></span> Kodama - Production| Lourenzo Kodama | WDD230 Project</p>
+            <p>&copy; <span id="copyrightYear"></span> kodama-Production| Lourenzo Kodama | WDD230 Project</p>
             <p>Last Modified: <span id="lastModified"></span></p>
             <p><span id="lastVisited"></span></p>
         </section>
