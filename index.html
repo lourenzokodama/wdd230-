@@ -1,76 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="We are solve your problems, with smart ideas">
-  <meta name="author" content="Lourenzo de M kodama">
-  <link rel="stylesheet" type="text/css" href="styles/base.css">
-  <link rel="stylesheet" type="text/css" href="styles/normalize.css">
-  <link rel="stylesheet" type="text/css" href="styles/larger.css">
-  <link rel="shortcut icon" href="images/kodama.ico">
- 
-  <title>Lourenzo Kodama - WDD 230 - Web Frontend Development</title>
-</head>
-<body>
-  <header>
-    <img class="avatar" src="images/lourenzo.webp" alt="Profile Picture">
-    <h1>Lourenzo kodama</h1>
-   <button id="menu"></button>
-  </header>
-  <nav>
-    <ol>
-        <li><a href="#">Home</a></li>
-        <li><a href="lesson03/chamber-site-plan">Site Plan</a></li>
-        <li><a href="">Chamber</a></li>
-        <li><a href="https://www.byui.edu/">BYU_IDAHO</a></li>
-        <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/mosiah/4?lang=eng#p9">Scripture</a></li>
-      <!-- Add more assignment links as needed -->
-    </ol>
-  </nav>
-  </div>
-  <main>
-     <!-- Main content of the home page -->
-    <h2>WDD 230: Web Frontend Development</h2>
-    <section class="card01">
-      <h3>Learning Activities</h3>
-      <ul>
-        <li><a href="">holy layout| js Pen</a></li>
-        <li><a href="lesson02/design-principles.html">Media Query | Design Principles Documents</a></li>
-        <li><a href="lesson03/chamber-site-plan.html">chamber-site-plan</a></li>
-        <li><a href="lesson04/index.html">chamber</a></li>
-        <li><a href="lesson05/bom.html">Book of Mormon Top10</a></li>
-        <li><a href="">6</a></li>
-        <li><a href="">7</a></li>
-        <li><a href="">8</a></li>
-        <li><a href="">9</a></li>
-        <li><a href="">10</a></li>
-        <li><a href="apresentation/index.html">apresentationApis</a></li>
-        <!-- Add more assignment links as needed -->
-      </ul>
-    </section>
-    <section class="card02">
-      <h3>Information</h3>
-      <p>Number of visits: <span id="counterDisplay"></span></p>
-      <p>Salt-Lake-City| Utah</p>
-     
-    </section>
-  </main>
- 
-  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153704.799707491!2d-114.18673586081155!3d39.47407618005252!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874c6bc78f13f9cd%3A0xbddf4aa56cd7463f!2sUtah!5e0!3m2!1sen!2sus!4v1696406595500!5m2!1sen!2sus"width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  <div class="place">
-               
-    
-<!-- Add more assignment links as needed -->
-</div>
-  
-  <footer>
-
-    <p>©<span id="year"></span>• Lourenzo Kodama | Utah- USA | <span id="time"></span>
-    
-  </footer>
-
-  <script src="scripts/counter.js"></script>
-  <script src="scripts/getdates.js"></script>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Presentation Examples</title>
+        <link rel="icon" href="favicon.png" type="icon">
+        <link rel="stylesheet" href="styles/styls.css">
+    </head>
+    <body class="big-grid">
+        <h1>🍰 Student Presentation: Examples</h1>
+        <h2>LocalStorage</h2>
+        <div onclick="openExample('ls-1')">
+            <h3>Example 1:</h3>
+            <h4>Storing and Retrieving Values</h4>
+        </div>
+        <div onclick="openExample('ls-2')">
+            <h3>Example 2:</h3>
+            <h4>Monitoring Values</h4>
+        </div>
+        <div onclick="openExample('ls-3')">
+            <h3>Example 3:</h3>
+            <h4>Managing Values</h4>
+        </div>
+        <hr>
+        <h2>SessionStorage</h2>
+        <div onclick="openExample('ss-1')">
+            <h3>Example 1:</h3>
+            <h4>Storing and Retrieving Values</h4>
+        </div>
+        <div onclick="openExample('ss-2')">
+            <h3>Example 2:</h3>
+            <h4>Monitoring Values</h4>
+        </div>
+        <div onclick="openExample('ss-3')">
+            <h3>Example 3:</h3>
+            <h4>Managing Values</h4>
+        </div>
+        <script src="scripts/examples.js"></script>
+    </body>
 </html>
