@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.card {
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 600px) {
+    .card {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .card {
+        width: 33.3333%;
+    }
+}
