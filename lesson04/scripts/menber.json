@@ -1,0 +1,21 @@
+[
+ {
+    "name": "Company A",
+    "address": "123 Main St",
+    "phoneNumber": "123-456-7890",
+    "websiteURL": "www.companya.com",
+    "image": "companyA.jpg",
+    "membershipLevel": "Platinum",
+    "additionalInfo": "CEO: John Doe"
+ },
+ {
+    "name": "Company B",
+    "address": "456 Wall St",
+    "phoneNumber": "456-123-9876",
+    "websiteURL": "www.companyb.com",
+    "image": "companyB.jpg",
+    "membershipLevel": "Gold",
+    "additionalInfo": "CEO: Jane Smith"
+ },
+ ...
+]
