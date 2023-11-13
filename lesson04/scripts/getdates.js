@@ -76,23 +76,23 @@ window.addEventListener("load", changeColor);
 
 // this is diretoryfile
 
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
+const gridbutton = document.querySelector("#grid01");
+const listbutton = document.querySelector("#toggleView");
 const display = document.querySelector("article");
 
 
 
 gridbutton.addEventListener("click", () => {
 	// example using arrow function
-	display.classList.add("grid");
-	display.classList.remove("list");
+	display.classList.add("grid01");
+	display.classList.remove("toggleView");
 });
 
 listbutton.addEventListener("click", showList); 
 
 function showList() {
-	display.classList.add("list");
-	display.classList.remove("grid");
+	display.classList.add("toggleView");
+	display.classList.remove("grid01");
 }
 
 
