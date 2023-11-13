@@ -1,99 +1,57 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+    font-family: 'Comfortaa', Verdana, sans-serif;
 }
-header{
-	text-align:center;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Exo 2', Verdana, sans-serif;
+    color: whitesmoke;
 }
-main {
-	margin: 0 auto;
-	padding: 0.5rem;
-	max-width: 700px;
-	background-color: #fff;
-	font-family: Roboto, Helvetica, sans-serif;
+h1 {
+    color: #F4B400
 }
 
-
-section {
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: #eee;
+header, footer {
+    text-align: center;
+}
+footer {
+    padding-top: 20px;
 }
 
-.grid {
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-	grid-gap: 5px;
-	align-items: center;
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    padding: 1rem;
+    background-color: #737373;
+    box-shadow: 0 0 30px gray;
+    justify-items: center;
 }
 
-.grid section {
-	text-align: center;
+.cards section {
+    text-align: center;
+    padding: 1rem;
+    border: solid 2px #F4B400;
+    background-color: #4285F4;
+    max-width: 300px;
+}
+.cards section * {
+    display: block;
+    margin: 0 auto;
+    padding: 0.25rem;
+}
+.cards section img {
+    width: 60%;
 }
 
-.grid img {
-	border: 1px solid #fff;
-	box-shadow: 0 0 10px #333;
+@media screen and (max-width: 1280px) {
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
 }
-
-.grid section > * {
-	margin: 0.1rem;
-}
-
-.grid h3 {
-	font-family: "Caveat", cursive;
-}
-
-.list {
-	display: flex;
-	flex-direction: column;
-}
-
-.list section {
-	display: grid;
-	grid-template-columns: 2fr 1fr 1fr;
-	margin: 0;
-	padding: 0.25rem;
-}
-
-.list section > * {
-	margin: 0 1rem;
-}
-
-.list section img {
-	display: none; /* smaller viewports only */
-}
-
-.list section h3 {
-	font-size: 1rem;
-	font-family: Roboto, Helvetica, sans-serif;
-}
-
-.list section:nth-child(even) {
-	background-color: #bed;
-}
-
-section h3 {
-	font-size: 1.5rem;
-}
-
-section p {
-	font-weight: 600;
-	font-size: smaller;
-}
-
-section a {
-	font-family: "Roboto", Arial, sans-serif;
-	font-size: 0.85rem;
-	color: navy;
-	letter-spacing: 1.1pt;
-}
-
-img {
-	height: 75px;
-	max-width: 100%; /* Images are jerks - Seattle*/
-}
-footer{
-	text-align:center;
+@media screen and (max-width: 668px) {
+    body {
+        margin: 0;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
 }
