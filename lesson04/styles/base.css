@@ -239,4 +239,19 @@
         flex-wrap: wrap;
         gap: 20px;
     }
+.card {
+ background-color: #f8f9fa;
+ border: 1px solid #dee2e6;
+ border-radius: 0.25rem;
+ box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ display: inline-block;
+ margin: 10px;
+ padding: 20px;
+ width: 300px;
+}
 
+.list-view .card {
+ display: block;
+ margin: 10px 0;
+ width: 100%;
+}
