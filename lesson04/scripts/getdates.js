@@ -76,37 +76,23 @@ window.addEventListener("load", changeColor);
 
 // this is diretoryfile
 
-async function fetchMembers() {
- const response = await fetch('scripts/member.json');
- const members = await response.json();
- displayMembers(members);
-}
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
+const display = document.querySelector("article");
 
-function displayMembers(members) {
- const directory = document.getElementById('directory');
- directory.innerHTML = '';
 
- members.forEach(member => {
- const card = document.createElement('div');
- card.classList.add('card');
 
- card.innerHTML = `
-   <h2>${member.name}</h2>
-   <p>${member.address}</p>
-   <p>${member.phoneNumber}</p>
-   <p>${member.websiteURL}</p>
-   <p>${member.membershipLevel}</p>
-   <p>${member.additionalInfo}</p>
- `;
-
- directory.appendChild(card);
- });
-}
-
-document.getElementById('toggleView').addEventListener('click', () => {
- const directory = document.getElementById('directory');
- directory.classList.toggle('list-view');
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
 });
 
-fetchMembers();
+listbutton.addEventListener("click", showList); 
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
+}
+
 
