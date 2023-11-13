@@ -87,7 +87,12 @@
         grid-template-columns: 1fr 2fr 1fr;
         grid-template-rows: 400px 400px 400px;
     }
-    
+    /* discovery*/
+	  .home02 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 400px 400px 400px;
+    }
     main section, main section div {
         background-color: #cac9c9;
         margin: 10px;
