@@ -180,7 +180,107 @@
     button:hover {
         background-color: rgba(252, 17, 17, 0.493);
     }
+/* directy page*/
+        #menu {
+	margin: 0 auto;
+	padding: 0.5rem;
+	max-width: 700px;
+	background-color: #fff;
+	font-family: Roboto, Helvetica, sans-serif;
+}
 
+.directory {
+	margin: 1rem auto;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #bed;
+	text-align: center;
+}
+
+.directory button {
+	padding: 1rem;
+	font-weight: 700;
+}
+
+section l1  {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	background-color: #eee;
+}
+
+.grid01 {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	grid-gap: 5px;
+	align-items: center;
+}
+
+.grid01 section {
+	text-align: center;
+}
+
+.grid01 img {
+	border: 1px solid #fff;
+	box-shadow: 0 0 10px #333;
+}
+
+.grid01 section > * {
+	margin: 0.1rem;
+}
+
+.grid01 h3 {
+	font-family: "Caveat", cursive;
+}
+
+.toggleView {
+	display: flex;
+	flex-direction: column;
+}
+
+.toggleView section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 0;
+	padding: 0.25rem;
+}
+
+.toggleView section > * {
+	margin: 0 1rem;
+}
+
+.toggleView section img {
+	display: none; /* smaller viewports only */
+}
+
+.toggleView section h3 {
+	font-size: 1rem;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+.toggleView section:nth-child(even) {
+	background-color: white;
+}
+
+section h3 {
+	font-size: 1.5rem;
+}
+
+section p {
+	font-weight: 600;
+	font-size: smaller;
+}
+
+section a {
+	font-family: "Roboto", Arial, sans-serif;
+	font-size: 0.85rem;
+	color: navy;
+	letter-spacing: 1.1pt;
+}
+
+ #imgp2 {
+	height: 75px;
+	max-width: 100%; 
+}
     /* FOOTER */
    
     
@@ -255,3 +355,6 @@
  margin: 10px 0;
  width: 100%;
 }
+
+
+
