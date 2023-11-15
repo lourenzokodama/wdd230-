@@ -91,7 +91,7 @@
 	  .home02 {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 400px  400px;
+        grid-template-rows: 400px 600px 400px;
     }
     main section, main section div {
         background-color: #cac9c9;
