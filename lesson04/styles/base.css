@@ -186,105 +186,98 @@
         background-color: rgba(252, 17, 17, 0.493);
     }
 /* directy page*/
-        #menu {
+    body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+
+m1 {
 	margin: 0 auto;
 	padding: 0.5rem;
 	max-width: 700px;
 	background-color: #fff;
-	font-family: Roboto, Helvetica, sans-serif;
 }
 
-.directory {
-	margin: 1rem auto;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	padding: 0.5rem;
-	background-color: #bed;
-	text-align: center;
-}
-
-.directory button {
-	padding: 1rem;
-	font-weight: 700;
-}
-
-section l1  {
+section1 {
 	border: 1px solid rgba(0, 0, 0, 0.1);
 	padding: 0.5rem;
 	background-color: #eee;
 }
 
-.grid01 {
+.grid0 {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
 	grid-gap: 5px;
 	align-items: center;
 }
 
-.grid01 section {
+.grid0 section1 {
 	text-align: center;
 }
 
-.grid01 img {
+.grid0 img {
 	border: 1px solid #fff;
 	box-shadow: 0 0 10px #333;
 }
 
-.grid01 section > * {
+.grid0 section1 > * {
 	margin: 0.1rem;
 }
 
-.grid01 h3 {
+.grid0 h3 {
 	font-family: "Caveat", cursive;
 }
 
-.toggleView {
+.list0 {
 	display: flex;
 	flex-direction: column;
 }
 
-.toggleView section {
+.list0 section1 {
 	display: grid;
 	grid-template-columns: 2fr 1fr 1fr;
 	margin: 0;
 	padding: 0.25rem;
 }
 
-.toggleView section > * {
+.list0 section1 > * {
 	margin: 0 1rem;
 }
 
-.toggleView section img {
+.list0 section1 img {
 	display: none; /* smaller viewports only */
 }
 
-.toggleView section h3 {
+.list0 section1 h3 {
 	font-size: 1rem;
 	font-family: Roboto, Helvetica, sans-serif;
 }
 
-.toggleView section:nth-child(even) {
-	background-color: white;
+.list0 section1:nth-child(even) {
+	background-color: #bed;
 }
 
-section h3 {
+section1 h3 {
 	font-size: 1.5rem;
 }
 
-section p {
+section1 p {
 	font-weight: 600;
 	font-size: smaller;
 }
 
-section a {
+section1 a {
 	font-family: "Roboto", Arial, sans-serif;
 	font-size: 0.85rem;
 	color: navy;
 	letter-spacing: 1.1pt;
 }
 
- #imgp2 {
+img1 {
 	height: 75px;
-	max-width: 100%; 
+	max-width: 100%; /* Images are jerks - Seattle*/
 }
     /* FOOTER */
    
