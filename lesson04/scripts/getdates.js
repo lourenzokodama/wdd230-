@@ -76,16 +76,16 @@ window.addEventListener("load", changeColor);
 
 // this is diretoryfile
 
-const gridButton = document.querySelector("#grid-button");
-const listButton = document.querySelector("#list-button");
-const display = document.querySelector("#display");
+const gridButton = document.querySelector("#grid0");
+const listButton = document.querySelector("#list0");
+const display = document.querySelector("article");
 
 gridButton.addEventListener("click", () => {
-    display.classList.add("grid");
-    display.classList.remove("list");
+    display.classList.add("grid0");
+    display.classList.remove("list0");
 });
 
 listButton.addEventListener("click", () => {
-    display.classList.add("list");
-    display.classList.remove("grid");
+    display.classList.add("list0");
+    display.classList.remove("grid0");
 });
