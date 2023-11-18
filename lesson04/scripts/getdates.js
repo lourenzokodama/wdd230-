@@ -76,7 +76,13 @@ window.addEventListener("load", changeColor);
 
 // this is diretoryfile
 
+function handleViewToggle(event) {
+	const button = event.target;
+	const view = button.dataset.view;
 
+	display.classList.remove("grid", "list");
+	display.classList.add(view);
+}
 const buttons = document.querySelectorAll(".view-toggle");
 const display = document.querySelector("article");
 
