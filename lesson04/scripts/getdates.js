@@ -76,23 +76,18 @@ window.addEventListener("load", changeColor);
 
 // this is diretoryfile
 
-const gridbutton = document.querySelector("#grid01");
-const listbutton = document.querySelector("#toggleView");
+
+const buttons = document.querySelectorAll(".view-toggle");
 const display = document.querySelector("article");
 
-
-
-gridbutton.addEventListener("click", () => {
-	// example using arrow function
-	display.classList.add("grid01");
-	display.classList.remove("toggleView");
+buttons.forEach(button => {
+	button.addEventListener("click", handleViewToggle);
 });
 
-listbutton.addEventListener("click", showList); 
+function handleViewToggle(event) {
+	const button = event.target;
+	const view = button.dataset.view;
 
-function showList() {
-	display.classList.add("toggleView");
-	display.classList.remove("grid01");
+	display.classList.toggle(view);
+	display.classList.toggle(view === "grid" ? "list" : "grid");
 }
-
-
