@@ -76,19 +76,21 @@ window.addEventListener("load", changeColor);
 
 // this is diretoryfile
 
-const gridbutton = document.querySelector("#grid0");
-const listbutton = document.querySelector("#list0");
+const gridbutton = document.querySelector("#grid");
+const listbutton = document.querySelector("#list");
 const display = document.querySelector("article");
 
-gridbutton.addEventListener("click", gridView);
-listbutton.addEventListener("click", listView);
+// The following code could be written cleaner. How? We may have to simplfiy our HTMl and think about a default view.
 
-function gridView() {
-    display.classList.add("grid0");
-    display.classList.remove("list0");
-}
+gridbutton.addEventListener("click", () => {
+	// example using arrow function
+	display.classList.add("grid");
+	display.classList.remove("list");
+});
 
-function listView() {
-    display.classList.add("list0");
-    display.classList.remove("grid0");
+listbutton.addEventListener("click", showList); // example using defined function
+
+function showList() {
+	display.classList.add("list");
+	display.classList.remove("grid");
 }
