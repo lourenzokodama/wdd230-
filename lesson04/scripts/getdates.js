@@ -80,7 +80,7 @@ function handleViewToggle(event) {
 	const button = event.target;
 	const view = button.dataset.view;
 
-	display.classList.remove("grid", "list");
+	display.classList.remove("grid0", "list0");
 	display.classList.add(view);
 }
 const buttons = document.querySelectorAll(".view-toggle");
@@ -95,5 +95,5 @@ function handleViewToggle(event) {
 	const view = button.dataset.view;
 
 	display.classList.toggle(view);
-	display.classList.toggle(view === "grid" ? "list" : "grid");
+	display.classList.toggle(view === "grid0" ? "list0" : "grid0");
 }
