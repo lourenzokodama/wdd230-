@@ -31,3 +31,4 @@ function  displayResults(weatherData) {
   weatherIcon.setAttribute('alt', desc);
   captionDesc.textContent = desc;
 }
+  apiFetch();
