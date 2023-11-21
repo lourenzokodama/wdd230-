@@ -76,94 +76,97 @@ window.addEventListener("load", changeColor);
 
 // this is diretoryfile
 
-        // Sample data
-        const featuredItems = [
-            {
-                title: 'Item 1',
-                description: 'Description 1',
-                image: 'image1.jpg',
-                link: '#'
-            },
-            // ...
-        ];
 
-        // Function to create a list item
-        function createListItem(item) {
-            const listItem = document.createElement('div');
-            listItem.classList.add('featured-item');
+    // data
+    const featuredItems = [
+      {
+        title: 'Item 1',
+        description: 'Description 1',
+        image: 'image1.jpg',
+        link: '#'
+      },
+      // ...
+    ];
 
-            const h3 = document.createElement('h3');
-            h3.textContent = item.title;
-            listItem.appendChild(h3);
+    // Function to create a list item
+    function createListItem(item) {
+      const listItem = document.createElement('div');
+      listItem.classList.add('featured-item');
 
-            const p = document.createElement('p');
-            p.textContent = item.description;
-            listItem.appendChild(p);
+      const h3 = document.createElement('h3');
+      h3.textContent = item.title;
+      listItem.appendChild(h3);
 
-            const a = document.createElement('a');
-            a.textContent = 'Read More';
-            a.href = item.link;
-            listItem.appendChild(a);
+      const p = document.createElement('p');
+      p.textContent = item.description;
+      listItem.appendChild(p);
 
-            return listItem;
-        }
+      const a = document.createElement('a');
+      a.textContent = 'Read More';
+      a.href = item.link;
+      listItem.appendChild(a);
 
-        // Function to create a grid item
-        function createGridItem(item) {
-            const gridItem = document.createElement('div');
-            gridItem.classList.add('featured-item');
+      return listItem;
+    }
 
-            const img = document.createElement('img');
-            img.src = item.image;
-            img.alt = item.title;
-            gridItem.appendChild(img);
+    // Function to create a grid item
+    function createGridItem(item) {
+      const gridItem = document.createElement('div');
+      gridItem.classList.add('featured-item');
 
-            const h3 = document.createElement('h3');
-            h3.textContent = item.title;
-            gridItem.appendChild(h3);
+      const img = document.createElement('img');
+      img.src = item.image;
+      img.alt = item.title;
+      gridItem.appendChild(img);
 
-            const p = document.createElement('p');
-            p.textContent = item.description;
-            gridItem.appendChild(p);
+      const h3 = document.createElement('h3');
+      h3.textContent = item.title;
+      gridItem.appendChild(h3);
 
-            const a = document.createElement('a');
-            a.textContent = 'Read More';
-            a.href = item.link;
-            gridItem.appendChild(a);
+      const p = document.createElement('p');
+      p.textContent = item.description;
+      gridItem.appendChild(p);
 
-            return gridItem;
-        }
+      const a = document.createElement('a');
+      a.textContent = 'Read More';
+      a.href = item.link;
+      gridItem.appendChild(a);
 
-        // Function to toggle between list and grid views
-        function toggleViews() {
-            const listView = document.getElementById('list-view');
-            const gridView = document.getElementById('grid-view');
+      return gridItem;
+    }
 
-            if (listView.style.display === 'none') {
-                listView.style.display = 'block';
-                gridView.style.display = 'none';
-            } else {
-                listView.style.display = 'none';
-                gridView.style.display = 'block';
-            }
-        }
+    // Function to toggle between list and grid views
+    function toggleViews() {
+      const listView = document.getElementById('list-view');
+      const gridView = document.getElementById('grid-view');
 
-        // Create the list view items
-        featuredItems.forEach(item => {
-            const listItem = createListItem(item);
-            document.getElementById('list-view').appendChild(listItem);
-        });
+      if (listView.style.display === 'none') {
+        listView.style.display = 'block';
+        gridView.style.display = 'none';
+      } else {
+        listView.style.display = 'none';
+        gridView.style.display = 'block';
+      }
+    }
 
-        // Create the grid view items
-        featuredItems.forEach(item => {
-            const gridItem = createGridItem(item);
-            document.getElementById('grid-view').appendChild(gridItem);
-        });
+    // Create the list view items
+    featuredItems.forEach(item => {
+      const listItem = createListItem(item);
+      document.getElementById('list-view').appendChild(listItem);
+    });
 
-        // Toggle the views when a button is clicked
-        document.addEventListener('click', event => {
-            if (event.target.id === 'toggle-views') {
-                toggleViews();
-            }
-        });
+    // Create the grid view items
+    featuredItems.forEach(item => {
+      const gridItem = createGridItem(item);
+      document.getElementById('grid-view').appendChild(gridItem);
+    });
+
+    // Toggle the views when a button is clicked
+    document.addEventListener('click', event => {
+      if (event.target.id === 'toggle-views') {
+        toggleViews();
+      }
+    });
+
+      
    
