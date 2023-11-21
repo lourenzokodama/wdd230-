@@ -76,16 +76,94 @@ window.addEventListener("load", changeColor);
 
 // this is diretoryfile
 
-const gridButton = document.querySelector("#grid0");
-const listButton = document.querySelector("#list0");
-const display = document.querySelector("article");
+        // Sample data
+        const featuredItems = [
+            {
+                title: 'Item 1',
+                description: 'Description 1',
+                image: 'image1.jpg',
+                link: '#'
+            },
+            // ...
+        ];
 
-gridButton.addEventListener("click", () => {
-    display.classList.add("grid0");
-    display.classList.remove("list0");
-});
+        // Function to create a list item
+        function createListItem(item) {
+            const listItem = document.createElement('div');
+            listItem.classList.add('featured-item');
 
-listButton.addEventListener("click", () => {
-    display.classList.add("list0");
-    display.classList.remove("grid0");
-});
+            const h3 = document.createElement('h3');
+            h3.textContent = item.title;
+            listItem.appendChild(h3);
+
+            const p = document.createElement('p');
+            p.textContent = item.description;
+            listItem.appendChild(p);
+
+            const a = document.createElement('a');
+            a.textContent = 'Read More';
+            a.href = item.link;
+            listItem.appendChild(a);
+
+            return listItem;
+        }
+
+        // Function to create a grid item
+        function createGridItem(item) {
+            const gridItem = document.createElement('div');
+            gridItem.classList.add('featured-item');
+
+            const img = document.createElement('img');
+            img.src = item.image;
+            img.alt = item.title;
+            gridItem.appendChild(img);
+
+            const h3 = document.createElement('h3');
+            h3.textContent = item.title;
+            gridItem.appendChild(h3);
+
+            const p = document.createElement('p');
+            p.textContent = item.description;
+            gridItem.appendChild(p);
+
+            const a = document.createElement('a');
+            a.textContent = 'Read More';
+            a.href = item.link;
+            gridItem.appendChild(a);
+
+            return gridItem;
+        }
+
+        // Function to toggle between list and grid views
+        function toggleViews() {
+            const listView = document.getElementById('list-view');
+            const gridView = document.getElementById('grid-view');
+
+            if (listView.style.display === 'none') {
+                listView.style.display = 'block';
+                gridView.style.display = 'none';
+            } else {
+                listView.style.display = 'none';
+                gridView.style.display = 'block';
+            }
+        }
+
+        // Create the list view items
+        featuredItems.forEach(item => {
+            const listItem = createListItem(item);
+            document.getElementById('list-view').appendChild(listItem);
+        });
+
+        // Create the grid view items
+        featuredItems.forEach(item => {
+            const gridItem = createGridItem(item);
+            document.getElementById('grid-view').appendChild(gridItem);
+        });
+
+        // Toggle the views when a button is clicked
+        document.addEventListener('click', event => {
+            if (event.target.id === 'toggle-views') {
+                toggleViews();
+            }
+        });
+   
