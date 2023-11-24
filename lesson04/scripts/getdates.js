@@ -77,63 +77,33 @@ window.addEventListener("load", changeColor);
 // this is diretoryfile
 
 
-    // data
-    const featuredItems = [
-      {
-        title: 'Item 1',
-        description: 'Description 1',
-        image: 'image1.jpg',
-        link: '#'
-      },
-      // ...
-    ];
+  var li_links = document.querySelectorAll(".links ul li");
+var view_wraps = document.querySelectorAll(".view_wrap");
+var list_view = document.querySelector(".list-view");
+var grid_view = document.querySelector(".grid-view");
 
-    // Function to create a list item
-    function createListItem(item) {
-      const listItem = document.createElement('div');
-      listItem.classList.add('featured-item');
+li_links.forEach(function(link){
+	link.addEventListener("click", function(){
+		li_links.forEach(function(link){
+			link.classList.remove("active");
+		})
 
-      const h3 = document.createElement('h3');
-      h3.textContent = item.title;
-      listItem.appendChild(h3);
+		link.classList.add("active");
 
-      const p = document.createElement('p');
-      p.textContent = item.description;
-      listItem.appendChild(p);
+		var li_view = link.getAttribute("data-view");
 
-      const a = document.createElement('a');
-      a.textContent = 'Read More';
-      a.href = item.link;
-      listItem.appendChild(a);
+		view_wraps.forEach(function(view){
+			view.style.display = "none";
+		})
 
-      return listItem;
-    }
-
-    // Function to create a grid item
-    function createGridItem(item) {
-      const gridItem = document.createElement('div');
-      gridItem.classList.add('featured-item');
-
-      const img = document.createElement('img');
-      img.src = item.image;
-      img.alt = item.title;
-      gridItem.appendChild(img);
-
-      const h3 = document.createElement('h3');
-      h3.textContent = item.title;
-      gridItem.appendChild(h3);
-
-      const p = document.createElement('p');
-      p.textContent = item.description;
-      gridItem.appendChild(p);
-
-      const a = document.createElement('a');
-      a.textContent = 'Read More';
-      a.href = item.link;
-      gridItem.appendChild(a);
-
-      return gridItem;
-    }
+		if(li_view == "list-view"){
+			list_view.style.display = "block";
+		}
+		else{
+			grid_view.style.display = "block";
+		}
+	})
+})
 
     // Function to toggle between list and grid views
     function toggleViews() {
