@@ -77,7 +77,7 @@ window.addEventListener("load", changeColor);
 // this is diretoryfile
 
 
-  var li_links = document.querySelectorAll(".links ul li");
+var li_links = document.querySelectorAll(".links ul li");
 var view_wraps = document.querySelectorAll(".view_wrap");
 var list_view = document.querySelector(".list-view");
 var grid_view = document.querySelector(".grid-view");
@@ -105,38 +105,6 @@ li_links.forEach(function(link){
 	})
 })
 
-    // Function to toggle between list and grid views
-    function toggleViews() {
-      const listView = document.getElementById('list-view');
-      const gridView = document.getElementById('grid-view');
-
-      if (listView.style.display === 'none') {
-        listView.style.display = 'block';
-        gridView.style.display = 'none';
-      } else {
-        listView.style.display = 'none';
-        gridView.style.display = 'block';
-      }
-    }
-
-    // Create the list view items
-    featuredItems.forEach(item => {
-      const listItem = createListItem(item);
-      document.getElementById('list-view').appendChild(listItem);
-    });
-
-    // Create the grid view items
-    featuredItems.forEach(item => {
-      const gridItem = createGridItem(item);
-      document.getElementById('grid-view').appendChild(gridItem);
-    });
-
-    // Toggle the views when a button is clicked
-    document.addEventListener('click', event => {
-      if (event.target.id === 'toggle-views') {
-        toggleViews();
-      }
-    });
-
+ 
       
    
