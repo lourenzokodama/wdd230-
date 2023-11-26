@@ -52,8 +52,6 @@ header button:hover {
     cursor: pointer;
 }
 
-
-
 #menu::before {
 	content: "☰";
 }
