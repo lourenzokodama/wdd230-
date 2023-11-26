@@ -9,4 +9,3 @@ const lastModifiedDate = document.lastModified;
 dateElement.textContent = "LastModified: " + lastModifiedDate;
 
 
-
