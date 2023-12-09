@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>~Scoots Homepage</title>
+        <meta name="description" content="The homepage for ~Scoots. Information
+                for both location ins Cozumel, Mexico.">
+        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Ruluko&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./style/index.css">
+        <link rel="stylesheet" href="./style/medium.css" media="(max-width: 650px)">
+        <link rel="stylesheet" href="./style/small.css" media="(max-width: 600px)">
+        <link rel="shortcut icon" href="./images/scoots-logo.png" type="image/x-icon">
+       
+    </head>
+    <body>
+        <header>
+            <h1>~Scoots</h1>
+            <nav class="out">
+                <ul>
+                    <li><span></span><span></span><span></span></li>
+                    <li><a class="at" href="./"><span>Home</span></a></li>
+                    <li><a class="  " href="./rentals.html"><span>Rentals</span></a></li>
+                    <li><a class="  " href="./reservations.html"><span>Reservations</span></a></li>
+                    <li><a class="  " href="./tours.html"><span>Tours</span></a></li>
+                    <li><a class="  " href="./contact.html"><span>Contact</span></a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="home">
+            <div class="alerts hide"></div>
+            <div class="hero">
+                <div>
+                    <p>Want to drive a Scooter, ATV, or Jeep around Cozumel, Mexico?</p>
+                    <a href="./reservations.html"><span>Make a Reservation</span></a>
+                </div>
+            </div>
+            <div class="grid">
+                <section>
+                    <h2>Rental Info</h2>
+                    <section class="grid">
+                        <img src="./images/honda-pioneer-atv.png" alt="placeholder">
+                        <h3> Look our Options <a href="./rentals.html"><span>Rent Now</span></a></h3>
+                        <p>Max Capacity: 4 people max in cars in scooter 2 people only</p>
+                        <p>Half day: $35-75   &nbsp; &nbsp; Full day: $ 30-175 </p>
+                    </section>
+                    <p>View more rental information on the <a href="./rentals.html"><span>Rentals page</span></a></p>
+                </section>
+                <hr>
+                <div class="weather">
+                    <section>
+                      <h3>Current Weather</h3>
+                        <img src="./images/wheather/03n.png" alt="temporary">
+                        <h4><p>The current temperature  <span id="current-temp"></span> &deg;F</p></h4>
+                          <span>60&deg;F</span>
+                    </section>
+                </div>
+                <div class="forecast">
+                    
+                    <section> 
+                        <img src="./images/wheather/01n.png" alt="monday">
+                         <h4 id="day1">Day 1</h4>
+                        <div class="weather-icon"></div>
+                        <span>89&deg;F</span>
+                    </section>
+                    <section>
+                        <img src="./images/wheather/02d.png" alt="tue">
+                        <h4 id="day2">Day 2</h4>
+                        <div class="weather-icon"></div>
+                        <span>87&deg;F</span>
+                    </section>
+                    <section>
+                        <img src="./images/wheather/03d.png" alt="thur">
+                         <h4 id="day3">Day 3</h4>
+                        <div class="weather-icon"></div>
+                        <span>78&deg;F</span>
+                    </section>
+                    <p>Weather information from <a target="_blank" rel="noopener" href="https://openweathermap.org/"><span>Open Weather</span></a></p>
+                </div>
+                <div class="social-links">
+                    <a target="_blank" rel="noopener" href="https://www.facebook.com" class="facebook"><img src="./images/facebook-white.png" alt="Facebook link"> <span>Facebook</span></a>
+                    <a target="_blank" rel="noopener" href="https://www.instagram.com" class="instagram"><img src="./images/instagram-white.png" alt="Instagram link"> <span>Instagram</span></a>
+                    <a target="_blank" rel="noopener" href="https://www.linkedin.com" class="linked-in"><img src="./images/linked-in-white.png" alt="LinkedIn link"> <span>LinkedIn</span></a>
+                    <a target="_blank" rel="noopener" href="https://www.youtube.com" class="youtube"><img src="./images/youtube-white.png" alt="YouTube link"> <span>YouTube</span></a>
+                    <a target="_blank" rel="noopener" href="https://www.twitter.com" class="twitter"><img src="./images/twitter-white.png" alt="Twitter link"> <span>Twitter</span></a>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>&copy;<span id="year">2023</span> ~Scoots All Rights Reserved</p>
+            <a href="./terms-of-use.html"><span>Terms of Use</span></a>
+            <a href="./privacy-policy.html"><span>Privacy Policy</span></a>
+        </footer>
+        <script src="javascript/index.js"></script>
+        <script src="javascript/weather.js"></script>
+        <script src="javascript/chill.js"></script>
+    </body>
+</html>
